@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "FuturaSH-Book";
+  src: url("../fonts/FuturaSH-Book.otf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css");
+
+// Fonts
+$body_font: "FuturaSH-Book", "Didact Gothic", Futura, Futura-Medium,
+  "Futura Medium", "Century Gothic", CenturyGothic, "Apple Gothic", AppleGothic,
+  "URW Gothic L", "Avant Garde", sans-serif;
+
+// Colours
+$bg_col: #f7f4ee;
+$fg_col: #654936;
+$orange: #ef7e00;
+$white: #fbfaf8;
+$red: #f9583c;
+$sand: #ddd5b7;
+$sand_white: #faf7f1;
+$sand_brown: #654936;
+$extra_col: #696666;

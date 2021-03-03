@@ -1,0 +1,19 @@
+docs_list_title: Site Navigation
+docs:
+  # - title: Home
+  #   url: /
+
+  - title: Store
+    url: /store
+
+  - title: Explore
+    url: /explore
+
+  - title: Values
+    url: /values
+
+  - title: Contact
+    url: /contact
+
+  - title: Shopping bag
+    url: /shopping-bag

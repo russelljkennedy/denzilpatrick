@@ -1,0 +1,28 @@
+<!-- <footer class="rj-foot"> -->
+<nav id="rj-nav">
+  <div class="rj-nav-links">
+    <ul>
+      {% for item in site.data.nav_links.docs %}
+      <li>
+        <a href="{{ site.baseurl }}{{ item.url }}" title="{{ item.title }}"
+          >{{ item.title }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <button class="pop"></button>
+  <div class="pop-menu">
+    <ul>
+      {% for item in site.data.nav_links.docs %}
+      <li>
+        <a href="{{ site.baseurl }}{{ item.url }}" title="{{ item.title }}"
+          >{{ item.title }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="pop-shop"></div>
+</nav>
+<!-- </footer> -->

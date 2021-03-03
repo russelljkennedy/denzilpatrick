@@ -1,0 +1,38 @@
+<div class="rj-contact-grid">
+  <div>
+    <h3>About</h3>
+    <p>{{ site.data.contact_details.docs.about_text }}</p>
+  </div>
+  <div class="split-cols">
+    <div class="col">
+      <h3>Contact</h3>
+      <p>
+        <a
+          href="mailto:{{ site.data.contact_details.docs.contact_email }}"
+          title="Our general contact email address"
+          >{{ site.data.contact_details.docs.contact_email }}</a
+        >
+      </p>
+    </div>
+    <div class="col">
+      <h3>Instagram</h3>
+      <p>
+        <a
+          href="{{ site.data.contact_details.docs.instagram_link }}"
+          title="Our Instagram"
+          >{{ site.data.contact_details.docs.instagram_handle }}</a
+        >
+      </p>
+    </div>
+  </div>
+  <div>
+    <h3>Press</h3>
+    <p>
+      <a
+        href="mailto:{{ site.data.contact_details.docs.press_email }}"
+        title="Email for press enquiries"
+        >{{ site.data.contact_details.docs.press_email }}</a
+      >
+    </p>
+  </div>
+</div>

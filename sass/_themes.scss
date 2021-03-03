@@ -1,0 +1,89 @@
+// Individual themes
+.dg-red {
+  color: $white;
+  background: $red;
+
+  .dg-logo {
+    color: $red;
+    fill: $red;
+  }
+
+  a,
+  .rj-foot a,
+  .pop,
+  .pop-shop,
+  .rj-nav-links ul li a {
+    color: $white;
+  }
+
+  hr {
+    border-top: 1px solid $white;
+  }
+
+  .rj-banner-link {
+    background: $red;
+    color: $white;
+  }
+
+  .rj-banner-bottom {
+    background: $red;
+  }
+
+  input#firstname,
+  input#lastname,
+  input#email,
+  textarea#message {
+    background: $red;
+    border: 1px solid $red;
+    border-bottom-color: $white;
+  }
+  input[type="submit"] {
+    border: 1px solid $white;
+    background: $red;
+    color: $white;
+  }
+}
+
+.dg-sand {
+  color: $sand_brown;
+  background: $sand;
+
+  .dg-logo {
+    color: $sand_white;
+    fill: $sand_white;
+  }
+
+  a,
+  .rj-foot a,
+  .pop,
+  .pop-shop,
+  .rj-nav-links ul li a {
+    color: $sand_brown;
+  }
+
+  hr {
+    border-top: 1px solid $sand_brown;
+  }
+
+  .rj-banner-link {
+    background: $sand;
+    color: $sand_white;
+  }
+
+  .rj-banner-bottom {
+    background: $sand;
+  }
+  input#firstname,
+  input#lastname,
+  input#email,
+  textarea#message {
+    background: $sand;
+    border: 1px solid $sand;
+    border-bottom-color: $sand_brown;
+  }
+  input[type="submit"] {
+    border: 1px solid $sand_brown;
+    background: $sand;
+    color: $sand_brown;
+  }
+}

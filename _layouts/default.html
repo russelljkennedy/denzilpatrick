@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ page.metatitle }}" />
+  <meta property="og:description" content="{{ page.metadescription }}" />
+  <meta property="og:url" content="{{ site.public_url }}{{ page.url }}" />
+  <meta property="og:site_name" content="{{ site.name }}" />
+  <meta property="og:image" content="{{ site.public_url }}/img/meta/{{ page.metaimg }}" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:description" content="{{ page.metadescription }}" />
+  <meta name="twitter:title" content="{{ page.metatitle }}" />
+  <meta name="twitter:image" content="{{ site.public_url }}/img/meta/{{ page.metaimg }}" />
+  <meta name="twitter:image:alt" content="{{ page.metaimgalt }}">
+  <title>Denzil Patrick | {{ page.title }}</title>
+  {% if page.stylesheet %}
+    {% for stylesheet in page.stylesheet %}
+      <link rel="stylesheet" href="{{ site.baseurl }}/{{ stylesheet }}">
+    {% endfor %}
+  {% endif %}
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
+  <link rel="icon" href="{{ site.baseurl }}favicon.ico">
+</head>
+  <body class="rj-grid-container {% if page.class %} {{page.class}} {% endif %}{% if page.url == "/" %}home {% if site.data.banner_top.docs.enabled == true %}banner-top{% endif %} {% if site.data.banner_bottom.docs.enabled == true %}banner-bottom{% endif %}{% endif %}" {%if page.background-image%} style="background-image: url('/img/{{ page.background-image }}'); background-repeat: no-repeat; background-position: center top; background-size: cover;"{%endif%}>
+    <!-- Header -->
+    <header class="rj-head">
+      {% if page.url == "/" %}
+        {% if site.data.banner_top.docs.enabled == true %}
+          {% include banner-top.html %}
+        {% endif %}
+      {% endif %}
+      {% include logo.html %}
+    </header>
+    <!-- Main content -->
+    <main class="rj-main">
+      {{ content }}
+    </main>
+    <!-- Footer -->
+    <footer class="rj-foot">
+      {% include footer.html %}
+      {% include cookies.html %}
+    </footer>
+    <!-- JS -->
+    {% if page.ext_js %}
+      {% for js in page.ext_js %}
+        <script src="{{ js }}"></script>
+      {% endfor %}
+    {% endif %}
+    {% if page.js %}
+    {% for js in page.js %}
+      <script src="{{ site.baseurl }}/js/{{ js }}"></script>
+    {% endfor %}
+    {% endif %}
+    <script src="{{ site.baseurl }}/js/main.js"></script>
+  </body>
+</html>

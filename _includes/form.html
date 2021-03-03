@@ -1,0 +1,136 @@
+<h2>Get in touch</h2>
+<form action="#" class="rj-form">
+  <div class="row">
+    <div class="form-label">
+      <label for="firstname">First name:</label>
+    </div>
+    <div class="form-text-input">
+      <input
+        type="text"
+        id="firstname"
+        name="first-name"
+        placeholder="Your first name"
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-label">
+      <label for="lastname">Last name:</label>
+    </div>
+    <div class="form-text-input">
+      <input
+        type="text"
+        id="lastname"
+        name="last-name"
+        placeholder="Your last name"
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-label">
+      <label for="email">Email address:</label>
+    </div>
+    <div class="form-text-input">
+      <input
+        type="email"
+        id="email"
+        name="your-email"
+        placeholder="Your email address"
+      />
+    </div>
+  </div>
+  <!-- For honeypot -->
+  <!-- <input type="text" name="_gotcha" style="display:none" /> -->
+  <div class="row">
+    <div class="form-label">
+      <label for="interest">What are you interested in?</label>
+    </div>
+    <div class="form-checkboxes">
+      <label class="rj-check-container">
+        <input type="checkbox" name="interest1" value="latex" />
+        Buying latex <span class="rj-check"></span><br />
+      </label>
+      <label class="rj-check-container">
+        <input type="checkbox" name="interest2" value="baseball" />
+        <span class="rj-check"></span>Baseball<br />
+      </label>
+      <label class="rj-check-container">
+        <input type="checkbox" name="interest3" value="superman" />
+        <span class="rj-check"></span>Superman<br />
+      </label>
+      <label class="rj-check-container">
+        <input type="checkbox" name="interest4" value="architect" />
+        <span class="rj-check"></span>Pretending to be an architect<br />
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-label">
+      <label for="message">Leave us a message:</label>
+    </div>
+    <div class="form-textarea">
+      <textarea
+        name="your-message"
+        id="message"
+        rows="15"
+        cols="100"
+      ></textarea>
+      <!-- <input type="textarea" id="message" name="your-message" cols="60" rows="5" /> -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="form-label">
+      <label for="radios">Radio buttons:</label>
+    </div>
+    <div class="rj-radio-container">
+      <label class="rj-radio-label"
+        >Radio One
+        <input
+          type="radio"
+          id="rj-radio-one"
+          name="rj-radio"
+          value="radio one"
+          checked="checked"
+        />
+        <span class="rj-radio"></span>
+      </label>
+
+      <label class="rj-radio-label"
+        >Radio Two
+        <input
+          type="radio"
+          id="rj-radio-two"
+          name="rj-radio"
+          value="radio two"
+        />
+        <span class="rj-radio"></span>
+      </label>
+      <label class="rj-radio-label"
+        >Radio Three
+        <input
+          type="radio"
+          id="rj-radio-three"
+          name="rj-radio"
+          value="radio-three"
+        />
+        <span class="rj-radio"></span>
+      </label>
+    </div>
+  </div>
+  <div class="row rj-select-container">
+    <div class="form-label">
+      <label for="select">Select options:</label>
+    </div>
+    <div class="rj-select">
+      <select>
+        <option value="0">Select beverage:</option>
+        <option value="1">Tea</option>
+        <option value="2">Coffee</option>
+        <option value="3">Beer</option>
+        <option value="4">Red wine</option>
+        <option value="5">Rum</option>
+      </select>
+    </div>
+  </div>
+  <input type="submit" value="Send" />
+</form>
