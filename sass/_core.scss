@@ -40,6 +40,9 @@ a {
     color: $bg_col;
     text-decoration: none;
   }
+  &:hover {
+    opacity: 0.8;
+  }
 }
 h1,
 h2,
@@ -47,6 +50,7 @@ h3,
 h4,
 p {
   padding-bottom: 15px;
+  font-weight: 100;
 }
 h1 {
   font-size: 2em;
@@ -224,7 +228,6 @@ nav {
   height: 90px;
   line-height: 80px;
   color: $fg_col;
-  // transition: bottom 0.9s linear;
 }
 .rj-nav-links {
   ul {
@@ -240,6 +243,11 @@ nav {
         text-decoration: none;
       }
     }
+  }
+}
+.home-link {
+  &:hover {
+    opacity: 1;
   }
 }
 @supports (display: grid) {
@@ -388,13 +396,8 @@ nav {
 .pop-menu li {
   display: block;
   padding: 0;
-  // border: $fg_col 1px solid;
-  // background: $bg_col;
-  // color: $fg_col;
 }
 .pop-menu li a {
-  // background: $bg_col;
-  // color: $fg_col;
   text-decoration: none;
   display: inline-block;
   width: 100%;
@@ -405,11 +408,6 @@ nav {
     margin-top: 22vh;
   }
 }
-// .pop-menu li:hover,
-// .pop-menu li a:hover {
-//   background: $bg_col;
-//   color: $fg_col;
-// }
 
 // Hero
 .rj-hero {
@@ -432,16 +430,21 @@ nav {
   margin: 0 auto;
   padding: 18vh 1.7vw 20px;
   max-width: 2000px;
+  min-height: 90vh;
   h1 {
     text-align: center;
   }
   h2 {
     position: absolute;
-    top: 0;
-    font-size: 1.2em;
+    top: 2.5vh;
+    padding-left: 2vw;
+    font-size: 1em;
     font-weight: 100;
     text-transform: uppercase;
     z-index: 3;
+  }
+  h3 {
+    padding: 0 10%;
   }
 }
 @media (min-width: 300px) {
@@ -505,7 +508,6 @@ nav {
 }
 @media (min-width: 1440px) {
   .rj-main {
-    // padding-top: 45vh;
     p {
       padding: 0 8vw;
       .n-pd {
@@ -518,11 +520,8 @@ nav {
 // Grid cards
 .rj-grid-card {
   display: block;
-  margin: 10px 0;
-  padding: 0 20px;
-  .n-pd {
-    padding: 0;
-  }
+  margin: 0 0 30px;
+  padding: 0 1vw;
 }
 @media (min-width: 550px) {
   // Flexbox fallback
@@ -534,8 +533,12 @@ nav {
   .rj-grid-card {
     // x2 grid
     width: 47vw;
-    // padding-right: 5px;
+    margin: 10px 0;
+    padding: 0 20px;
     justify-content: space-between;
+    .n-pd {
+      padding: 0;
+    }
   }
   // CSS Grid -- @TODO -- adjust grid size for specific layout
   @supports (display: grid) {
@@ -548,6 +551,9 @@ nav {
       width: auto;
       // padding-right: 0;
       justify-content: normal;
+      .n-pd {
+        padding: 0;
+      }
     }
   }
 }
@@ -652,9 +658,31 @@ nav {
     display: grid;
     margin: 0 auto;
     max-width: 2000px;
-    min-height: 0;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 10vh 1fr 1fr;
     row-gap: 30px;
+  }
+  @media (min-width: 400px) {
+    .rj-grid-container {
+      grid-template-rows: 20vh 1fr 1fr;
+    }
+  }
+  @media (min-width: 550px) {
+    .rj-grid-container {
+      grid-template-rows: 25vh 1fr 1fr;
+    }
+  }
+  @media (min-width: 768px) {
+    .rj-grid-container {
+      grid-template-rows: 30vh 1fr 1fr;
+    }
+  }
+  @media (min-width: 1024px) {
+    .rj-grid-container {
+      grid-template-rows: repeat(3, 1fr);
+    }
+  }
+  .home {
+    height: 100vh;
   }
   .rj-head {
     display: grid;
@@ -668,7 +696,7 @@ nav {
     grid-row-start: 2;
     padding: 0;
     p {
-      font-size: 1.5em;
+      font-size: 1em;
     }
   }
   .rj-foot {
@@ -679,10 +707,18 @@ nav {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .rj-main {
     p {
-      font-size: 1.8em;
+      font-size: 1.2em;
+    }
+  }
+}
+
+@media (min-width: 1650px) {
+  .rj-main {
+    p {
+      font-size: 1.4em;
     }
   }
 }

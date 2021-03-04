@@ -1,13 +1,21 @@
 .rj-form {
-  padding: 30px 0;
+  padding: 30px 3vw;
 }
+@media (min-width: 550px) {
+  .rj-form {
+    padding: 30px 0;
+  }
+}
+
 .rj-form label {
   font-size: 1rem;
 }
+
 .form-label {
   padding-bottom: 5px;
   text-transform: uppercase;
 }
+
 .form-text-input,
 .form-textarea,
 .form-checkboxes,
@@ -15,16 +23,19 @@
 .rj-select-container {
   padding-bottom: 15px;
 }
+
 .form-checkboxes,
 .form-radios {
   font-size: 1.3rem;
   line-height: 25px;
 }
+
 .form-checkboxes input {
   margin-right: 15px;
   width: 15px;
   height: 15px;
 }
+
 input#firstname,
 input#lastname,
 input#email,
@@ -37,16 +48,19 @@ textarea#message {
   padding-left: 10px;
   background: $bg_col;
 }
+
 input#firstname,
 input#lastname,
 input#email {
   height: 30px;
 }
+
 textarea#message {
   height: 200px;
   padding-top: 10px;
   font-family: $body_font, Roboto, sans-serif;
 }
+
 /* Hide default form checkbox */
 .rj-form input[type="checkbox"],
 .rj-form input[type="radio"] {
@@ -56,6 +70,7 @@ textarea#message {
   height: 0;
   width: 0;
 }
+
 .rj-check-container,
 .rj-radio-label {
   position: relative;
@@ -69,6 +84,7 @@ textarea#message {
   -ms-user-select: none;
   user-select: none;
 }
+
 .rj-check {
   position: absolute;
   top: 0;
@@ -78,26 +94,31 @@ textarea#message {
   background-color: #eee;
   border: 1px solid #d4d4d4;
 }
+
 /* On mouse-over, add a grey background */
 .rj-check-container:hover input ~ .rj-check,
 .rj-radio-label:hover input ~ .rj-radio {
   background-color: #ccc;
 }
+
 .rj-check-container input:checked ~ .rj-check,
 .rj-radio-label input:checked ~ .rj-radio {
   background-color: #e19724;
   border: 1px solid #e19724;
 }
+
 .rj-check:after,
 .rj-radio:after {
   content: "";
   position: absolute;
   display: none;
 }
+
 .rj-check-container input:checked ~ .rj-check:after,
 .rj-radio-label input:checked ~ .rj-radio:after {
   display: block;
 }
+
 .rj-check-container .rj-check:after {
   left: 9px;
   top: 5px;
@@ -109,6 +130,7 @@ textarea#message {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
 .rj-radio {
   position: absolute;
   left: 0;
@@ -118,6 +140,7 @@ textarea#message {
   border-radius: 50%;
   margin-top: 4px;
 }
+
 .rj-radio-label .rj-radio:after {
   top: 4px;
   left: 4px;
@@ -126,6 +149,7 @@ textarea#message {
   border-radius: 50%;
   background: rgb(245, 238, 238);
 }
+
 .rj-select {
   position: relative;
   width: 95%;
@@ -133,11 +157,13 @@ textarea#message {
   select {
     display: none;
   }
+
   // New select options added via the form.js file
   .select-selected {
     background-color: #e19724;
     border-radius: 3px;
   }
+
   .select-selected:after {
     position: absolute;
     content: "";
@@ -148,10 +174,12 @@ textarea#message {
     border: 6px solid transparent;
     border-color: #fff transparent transparent transparent;
   }
+
   .select-selected.select-arrow-active:after {
     border-color: transparent transparent #fff transparent;
     top: 7px;
   }
+
   .select-items div,
   .select-selected {
     color: #ffffff;
@@ -160,6 +188,7 @@ textarea#message {
     border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
     cursor: pointer;
   }
+
   .select-items {
     position: absolute;
     background-color: #e19724;
@@ -173,11 +202,13 @@ textarea#message {
   .select-hide {
     display: none;
   }
+
   .select-items div:hover,
   .same-as-selected {
     background-color: rgba(0, 0, 0, 0.1);
   }
 }
+
 input[type="submit"] {
   // background: #d4d4d4;
   font-size: 1rem;
@@ -193,22 +224,27 @@ input[type="submit"] {
   color: $fg_col;
   cursor: pointer;
 }
+
 input[type="submit"]:hover {
   opacity: 0.8;
 }
+
 @media (min-width: 769px) {
   textarea#message,
   .rj-select {
     width: 60%;
   }
 }
+
 .row {
   padding-bottom: 20px;
 }
+
 .row-inline {
   display: inline-block;
   width: 100%;
 }
+
 @media (min-width: 769px) {
   .row-inline {
     width: 45.8%;
@@ -217,16 +253,19 @@ input[type="submit"]:hover {
     margin-right: 20px;
   }
 }
+
 @media (min-width: 950px) {
   .row-inline {
     width: 46.8%;
   }
 }
+
 @media (min-width: 1200px) {
   .row-inline {
     width: 47.8%;
   }
 }
+
 @media (min-width: 1440px) {
   .row-inline {
     width: 48%;
