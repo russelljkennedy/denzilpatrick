@@ -13,3 +13,5 @@ metaimgalt: Denzil Patrick share image
 ## Store
 
 The store will go here...
+
+{% include main-products.html %}
