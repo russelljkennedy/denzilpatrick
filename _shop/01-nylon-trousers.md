@@ -1,8 +1,15 @@
 ---
+layout: product
 identifier: nylon-trousers
 name: Nylon trousers
 price: 370
 image: /img/shop/01-main-shop/nylon-trousers.png
-description: Refenerated fibres / New life garment
+description: Regenerated fibres / New life garment
 category: Trousers/shorts
+available_sizes:
+  - XS
+  - S
+  - M
+  - L
+  - XL
 ---

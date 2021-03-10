@@ -2,4 +2,20 @@
 layout: default
 ---
 
-{{ content }}
+<div class="rj-product-container">
+  <div class="product-info">
+    <p>{{ page.category }}</p>
+    <h3>{{ page.name }}</h3>
+    <h3>£{{ page.price }}</h3>
+    <p>{{ page.description }}</p>
+    <a href="/store/size-guide" class="rj-upper">Size guide</a>
+    <ul>
+      {% for size in page.available_sizes %}
+      <li>{{ size }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="product-image">
+    <img src="{{ page.image }}" alt="" />
+  </div>
+</div>

@@ -7,4 +7,5 @@ public_url:
 kramdown:
   auto_ids: false
 collections:
-  - main_shop
+  shop:
+    output: true
