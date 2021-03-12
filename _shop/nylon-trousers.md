@@ -12,4 +12,6 @@ available_sizes:
   - M
   - L
   - XL
+class: curvy
+weight: 1
 ---

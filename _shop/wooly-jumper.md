@@ -12,4 +12,6 @@ available_sizes:
   - M
   - L
   - XL
+class:
+weight: 2
 ---

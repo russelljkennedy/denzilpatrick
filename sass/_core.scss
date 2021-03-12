@@ -661,29 +661,29 @@ nav {
     display: grid;
     margin: 0 auto;
     max-width: 2000px;
-    grid-template-rows: 10vh 1fr 1fr;
+    grid-template-rows: minmax(80px, 1fr);
     row-gap: 10px;
   }
-  @media (min-width: 400px) {
-    .rj-grid-container {
-      grid-template-rows: 15vh 1fr 1fr;
-    }
-  }
-  @media (min-width: 550px) {
-    .rj-grid-container {
-      grid-template-rows: 20vh 1fr 1fr;
-    }
-  }
-  @media (min-width: 768px) {
-    .rj-grid-container {
-      grid-template-rows: 30vh 1fr 1fr;
-    }
-  }
-  @media (min-width: 1024px) {
-    .rj-grid-container {
-      grid-template-rows: repeat(3, 1fr);
-    }
-  }
+  // @media (min-width: 400px) {
+  //   .rj-grid-container {
+  //     grid-template-rows: 15vh 1fr 1fr;
+  //   }
+  // }
+  // @media (min-width: 550px) {
+  //   .rj-grid-container {
+  //     grid-template-rows: 20vh 1fr 1fr;
+  //   }
+  // }
+  // @media (min-width: 768px) {
+  //   .rj-grid-container {
+  //     grid-template-rows: 30vh 1fr 1fr;
+  //   }
+  // }
+  // @media (min-width: 1024px) {
+  //   .rj-grid-container {
+  //     grid-template-rows: repeat(3, 1fr);
+  //   }
+  // }
   .home {
     height: 100vh;
   }
