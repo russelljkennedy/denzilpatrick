@@ -92,6 +92,11 @@ hr {
   border-top: 1px solid $fg_col;
 }
 
+// Text element styles
+.rj-upper {
+  text-transform: uppercase;
+}
+
 // Images
 img {
   max-width: 100%;
