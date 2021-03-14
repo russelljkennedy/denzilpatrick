@@ -13,6 +13,11 @@ available_sizes:
   - M
   - L
   - XL
+instructions:
+  - 52%PA 48%PL
+  - Cold machine wash
+  - Made in UK
+  - Free shipping
 class:
 weight: 2
 ---

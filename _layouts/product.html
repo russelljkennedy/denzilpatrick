@@ -23,4 +23,12 @@ layout: store
   <div class="add-item">
     {% include product-definition.html %}
   </div>
+  <div class="product-instructions">
+    <p class="rj-upper underline">Information</p>
+    <ul>
+      {% for instruction in page.instructions %}
+      <li>{{ instruction }}</li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>

@@ -73,7 +73,7 @@
     padding: 0 1.7vw;
 
     p {
-      padding-bottom: 5px;
+      padding: 0 0 5px;
       font-size: 0.8em;
     }
 
@@ -92,6 +92,7 @@
       padding: 10px;
       margin: 20px 0 0;
       border-radius: 100%;
+      cursor: pointer;
       &:hover {
         color: $bg_col;
         background: $fg_col;
@@ -127,10 +128,120 @@
       }
     }
   }
+
+  .product-instructions {
+    ul {
+      margin-top: 20px;
+      padding: 0 30px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .product-details-container {
+    .product-image {
+      float: right;
+      max-width: 300px;
+    }
+
+    .add-item {
+      .add-to-bag {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .product-details-container {
+    .product-image {
+      max-width: 500px;
+    }
+
+    .product-info {
+      ul {
+        text-align: left;
+      }
+    }
+
+    .add-item {
+      .add-to-bag {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .product-details-container {
+    .product-image {
+      max-width: 700px;
+    }
+
+    .add-item {
+      .add-to-bag {
+        width: 27%;
+      }
+    }
+  }
 }
 
 @supports (display: grid) {
   .product-details-container {
     display: grid;
+  }
+
+  @media (min-width: 700px) {
+    .store {
+      .rj-main {
+        grid-row-start: 1;
+        padding: 0;
+        height: 100%;
+      }
+    }
+
+    .product-details-container {
+      grid-template-columns: 1fr 2fr;
+      grid-template-areas:
+        "space product product"
+        "details product product"
+        "details product product"
+        "details product product"
+        "details product product";
+      grid-template-rows: 420px 1fr 10vh 1fr 1fr;
+
+      .product-image {
+        float: none;
+        max-width: 2000px;
+        grid-area: product;
+        overflow: hidden;
+
+        img {
+          max-width: unset;
+          height: 100%;
+        }
+      }
+
+      .product-info {
+        grid-area: details;
+        grid-row-end: 2;
+      }
+
+      .add-item {
+        grid-area: details;
+        grid-row-start: 3;
+
+        .add-to-bag {
+          width: 27vw;
+          max-width: 550px;
+        }
+      }
+
+      .product-instructions {
+        grid-area: details;
+        grid-row-start: 4;
+      }
+    }
   }
 }

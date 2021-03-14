@@ -96,6 +96,9 @@ hr {
 .rj-upper {
   text-transform: uppercase;
 }
+.underline {
+  text-decoration: underline;
+}
 
 // Images
 img {
@@ -233,6 +236,7 @@ nav {
   height: 90px;
   line-height: 80px;
   color: $fg_col;
+  z-index: 3;
 }
 .rj-nav-links {
   ul {
@@ -644,6 +648,7 @@ nav {
 .rj-head {
   max-width: 2000px;
   margin: 0 auto;
+  max-height: 420px;
 }
 
 .rj-logo-container {
@@ -667,28 +672,8 @@ nav {
     margin: 0 auto;
     max-width: 2000px;
     grid-template-rows: minmax(80px, 1fr);
-    row-gap: 10px;
+    // row-gap: 10px;
   }
-  // @media (min-width: 400px) {
-  //   .rj-grid-container {
-  //     grid-template-rows: 15vh 1fr 1fr;
-  //   }
-  // }
-  // @media (min-width: 550px) {
-  //   .rj-grid-container {
-  //     grid-template-rows: 20vh 1fr 1fr;
-  //   }
-  // }
-  // @media (min-width: 768px) {
-  //   .rj-grid-container {
-  //     grid-template-rows: 30vh 1fr 1fr;
-  //   }
-  // }
-  // @media (min-width: 1024px) {
-  //   .rj-grid-container {
-  //     grid-template-rows: repeat(3, 1fr);
-  //   }
-  // }
   .home {
     height: 100vh;
   }
@@ -702,7 +687,7 @@ nav {
     display: grid;
     grid-area: main;
     grid-row-start: 2;
-    padding: 0 0 40vh 0;
+    padding: 0 0 20vh;
     p {
       font-size: 1em;
     }
