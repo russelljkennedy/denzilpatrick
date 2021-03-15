@@ -2,7 +2,7 @@
 layout: default
 title: Values
 type: page
-class:
+class: values
 background-image:
 metatitle: Values
 metadescription: Find your next big look

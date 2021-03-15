@@ -27,7 +27,11 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/{{ stylesheet }}" />
     {% endfor %} {% endif %}
     <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
-    <link rel="icon" href="{{ site.baseurl }}favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css"
+    />
+    <link rel="icon" href="{{ site.baseurl }}/favicon.ico" />
   </head>
   <body
     class="rj-grid-container store {% if page.class %} {{page.class}} {% endif %}"
@@ -52,6 +56,16 @@
     {% endfor %} {% endif %} {% if page.js %} {% for js in page.js %}
     <script src="{{ site.baseurl }}/js/{{ js }}"></script>
     {% endfor %} {% endif %}
+    <script
+      async
+      src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"
+    ></script>
+    <div
+      id="snipcart"
+      data-config-modal-style="side"
+      data-api-key="ZGIzYWZlNTEtZjI1NS00MTJmLTg2OWYtNzQ3YjcwNzgxYzBjNjM3NTA5MDQ1MTMyMzczMzU4"
+      hidden
+    ></div>
     <script src="{{ site.baseurl }}/js/main.js"></script>
     <script src="{{ site.baseurl }}/js/store.js"></script>
   </body>

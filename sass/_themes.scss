@@ -42,6 +42,20 @@
     background: $red;
     color: $white;
   }
+
+  .product-details-container {
+    .add-item {
+      .add-to-bag {
+        border: 0.5px solid $white;
+        color: $white;
+
+        &:hover {
+          color: $red;
+          background: $white;
+        }
+      }
+    }
+  }
 }
 
 .dg-sand {
@@ -85,5 +99,19 @@
     border: 1px solid $sand_brown;
     background: $sand;
     color: $sand_brown;
+  }
+
+  .product-details-container {
+    .add-item {
+      .add-to-bag {
+        border: 0.5px solid $sand_brown;
+        color: $sand_brown;
+
+        &:hover {
+          color: $sand;
+          background: $sand_brown;
+        }
+      }
+    }
   }
 }

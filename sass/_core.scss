@@ -99,6 +99,59 @@ hr {
 .underline {
   text-decoration: underline;
 }
+.values {
+  h3 {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 400px) {
+  .values {
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .values {
+    h3 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .values {
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .values {
+    h3 {
+      font-size: 2.7rem;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .values {
+    h3 {
+      font-size: 3.2rem;
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .values {
+    h3 {
+      font-size: 3.4rem;
+    }
+  }
+}
 
 // Images
 img {
