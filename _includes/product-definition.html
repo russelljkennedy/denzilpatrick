@@ -8,7 +8,7 @@
   data-item-url="{{ page.url }}"
   data-item-description="{{ page.description }}"
   data-item-custom1-name="size"
-  data-item-custom1-value=""
+  data-item-custom1-options="{% for size in page.available_sizes %} {% if forloop.first == true %} {{ size }} {% else %} | {{ size }} {% endif %} {% endfor %}"
 >
   Add to bag
 </button>

@@ -1,5 +1,6 @@
 // Store and products //
-.product-container {
+.product-container,
+#shopify-container {
   padding: 0 1.7vw;
   max-width: 2000px;
 
@@ -25,7 +26,8 @@
 }
 
 @supports (display: grid) {
-  .product-container {
+  .product-container,
+  #shopify-container {
     display: grid;
   }
 
@@ -38,14 +40,16 @@
   }
 
   @media (min-width: 769px) {
-    .product-container {
+    .product-container,
+    #shopify-container {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 30px;
     }
   }
 
   @media (min-width: 1024px) {
-    .product-container {
+    .product-container,
+    #shopify-container {
       grid-gap: 12vw;
     }
     .product {

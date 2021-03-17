@@ -36,10 +36,23 @@ gulp.task("concat", function(done) {
   done();
 });
 
+// Store
+gulp.task("store", function(done) {
+  gulp
+    .src("lib/store/*.js")
+    .pipe(concat("store.js"))
+    .pipe(uglify().on("error", console.error))
+    .pipe(gulp.dest("js"));
+  done();
+});
+
 // Default task
 gulp.task("default", gulp.series("concat"), gulp.series("sass"));
 
 // Watch task
 gulp.task("watch", function() {
-  gulp.watch(["sass/*.scss", "lib/*.js"], gulp.parallel("sass", "concat"));
+  gulp.watch(
+    ["sass/*.scss", "lib/*.js,", "lib/store/*js"],
+    gulp.parallel("sass", "concat", "store")
+  );
 });
