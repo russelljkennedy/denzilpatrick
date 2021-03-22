@@ -282,9 +282,8 @@ figure {
 
 // Nav
 nav {
-  display: none;
   position: fixed;
-  bottom: 30px;
+  top: 0;
   width: 100%;
   height: 90px;
   line-height: 80px;
@@ -497,7 +496,7 @@ nav {
     text-align: center;
   }
   h2 {
-    position: absolute;
+    // position: absolute;
     top: 2.5vh;
     padding-left: 2vw;
     font-size: 1em;
@@ -705,8 +704,8 @@ nav {
 }
 
 .rj-logo-container {
-  // position: absolute;
-  top: 0;
+  position: fixed;
+  bottom: 60px;
   padding: 0 1.7vw;
   width: 100vw;
   max-width: 2000px;
@@ -725,7 +724,12 @@ nav {
     margin: 0 auto;
     max-width: 2000px;
     grid-template-rows: minmax(80px, 1fr);
+    // grid-template-rows: 1fr 3fr;
     // row-gap: 10px;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
   }
   .home {
     height: 100vh;
@@ -735,6 +739,7 @@ nav {
     grid-area: header;
     grid-row-start: 1;
     grid-row-end: 1;
+    margin: 0;
   }
   .rj-main {
     display: grid;

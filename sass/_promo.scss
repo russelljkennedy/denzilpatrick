@@ -8,14 +8,16 @@
 
 .banner-top {
   .rj-banner-top {
-    position: absolute;
-    margin: 0 auto;
+    // position: absolute;
+    margin: 0;
     .rj-banner-link {
-      position: absolute;
+      position: fixed;
       top: 10px;
-      left: 0.5vh;
+      // left: 0.5vh;
       width: 97vw;
+      height: 30px;
       max-width: 1942px;
+      margin: 0 1vw;
       padding: 5px;
       border-radius: 25px;
       text-align: center;
@@ -24,8 +26,8 @@
       font-size: 10px;
     }
   }
-  .rj-logo-container {
-    top: 40px;
+  nav {
+    top: 30px;
   }
   .pop-menu {
     ul {
@@ -41,25 +43,25 @@
   }
 }
 
-@media (min-width: 450px) {
-  .banner-top {
-    .rj-banner-top {
-      .rj-banner-link {
-        left: 1vh;
-      }
-    }
-  }
-}
+// @media (min-width: 450px) {
+//   .banner-top {
+//     .rj-banner-top {
+//       .rj-banner-link {
+//         left: 1vh;
+//       }
+//     }
+//   }
+// }
 
-@media (min-width: 550px) {
-  .banner-top {
-    .rj-banner-top {
-      .rj-banner-link {
-        left: 1.7vh;
-      }
-    }
-  }
-}
+// @media (min-width: 550px) {
+//   .banner-top {
+//     .rj-banner-top {
+//       .rj-banner-link {
+//         left: 1.7vh;
+//       }
+//     }
+//   }
+// }
 @media (min-width: 769px) {
   .banner-top {
     .rj-banner-top {
